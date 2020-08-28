@@ -1,26 +1,12 @@
 # Explicación 0: Instalación de Ruby
 
-## Aclaraciones iniciales
-
-Con el fin de unificar criterios, desde la cátedra sólo daremos soporte para
-Sistemas Operativos *nix (Unix-like). Principalmente, porque el desarrollo con
-Ruby en Windows suele traer problemas específicos de esa plataforma con los que
-se tiende a perder tiempo que no resulta redituable.
-
-A fin de facilitarles la preparación del ambiente, en caso que no cuenten con
-una instalación disponible (física o virtual) de un Sistema Operativo *nix
-(GNU/Linux o macOS, por ejemplo), les brindaremos en una guía separada los
-pasos para instalar un Ubuntu Linux en una máquina virtual con herramientas
-gratuitas y Open Source.
-
-Se asume que el ambiente donde se ejecutan los comandos es una shell Bash o
-compatible.
+En esta explicación se trata de explicar en una guía paso a paso cómo preparar un ambiente
+de desarrollo local para Ruby.
 
 ## Gestores de ambiente
 
-Los gestores de ambiente, también llamados _manejadores de versiones_,
-facilitan el uso de múltiples versiones de un lenguaje (Ruby, en nuestro caso)
-en un mismo sistema.
+Los gestores de ambiente, también llamados _manejadores de versiones_, facilitan el uso de
+múltiples versiones de un lenguaje (Ruby, en nuestro caso) en un mismo sistema.
 
 Idealmente, el gestor de ambiente será una herramienta que no se note pero que
 estará presente en la shell, cambiando la versión de Ruby automáticamente (acorde a
@@ -36,10 +22,6 @@ Los más populares:
   * Extensible mediante plugins.
 
 Nos vamos a centrar en **rbenv**, el gestor que desde la cátedra recomendamos usar.
-
-> **Nota:** los comandos prefijados con numeral (`#`) deben ejecutarse con un usuario
-> con privilegios, mientras que los que se prefijan con el signo de pesos (`$`) pueden
-> ejecutarse con un usuario regular.
 
 ### rbenv: instalación
 
