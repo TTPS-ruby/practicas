@@ -11,12 +11,19 @@
 #       bin/build
 #   - To build a specific directory or set of directories:
 #       bin/build practicas
+#   - To clean up any previously generated files:
+#       bin/build --clean
 
 set -eo pipefail
 
-CWD="$(pwd)"
-INPUT_FORMAT="md"
 OUTPUT_DIR="pdfs"
+
+if [ "$1" = "--clean" ]; then
+  rm -rf "${OUTPUT_DIR}"
+  exit 0
+fi
+
+INPUT_FORMAT="md"
 OUTPUT_FORMAT="pdf"
 
 if [ $# -gt 0 ]; then
