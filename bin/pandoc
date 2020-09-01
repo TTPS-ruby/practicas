@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Convenience script to run the Pandoc + Eisvogel Docker image with a set of default args.
+# The /data directory for the Docker image will be the current working directory from
+# which this script has been invoked.
+# Default arguments for the Docker image are defined via the $DEFAULT_ARGS variable below.
+#
+# Usage:
+#   $ bin/pandoc input.md -o output.pdf
+
+set -eo pipefail
+
+IMAGE="docker.pkg.github.com/ttps-ruby/pandoc-eisvogel/run"
+CWD="$(pwd)"
+DEFAULT_ARGS="--listings"
+
+docker run --rm --volume "${CWD}:/data" "${IMAGE}" $@ ${DEFAULT_ARGS}

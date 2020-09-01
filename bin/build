@@ -1,0 +1,56 @@
+#!/bin/bash
+
+# Build script to generate PDF files from any Markdown file found within the input
+# directories, which may be provided as arguments for this script - otherwise the default
+# ones will be considered (see the $ROOT_DIRS variable initialization below).
+# The generated files will be created in the $OUTPUT_DIR directory, copying the structure
+# of the input directories.
+#
+# Usage:
+#   - To build the default directories:
+#       bin/build
+#   - To build a specific directory or set of directories:
+#       bin/build practicas
+
+set -eo pipefail
+
+CWD="$(pwd)"
+INPUT_FORMAT="md"
+OUTPUT_DIR="pdfs"
+OUTPUT_FORMAT="pdf"
+
+if [ $# -gt 0 ]; then
+  ROOT_DIRS=($@)
+else
+  ROOT_DIRS=(entregas explicaciones practicas)
+fi
+
+TARGET_DIRS=()
+
+IFS=$'\n'
+for ROOT in ${ROOT_DIRS[@]}; do
+  pushd ${ROOT} >/dev/null
+
+  OUTDIR="${OUTPUT_DIR}/${ROOT}"
+
+  for FILE in $(find * -name "*.${INPUT_FORMAT}"); do
+    TARGET_DIR="${OUTDIR}/$(dirname ${FILE})"
+    TARGET_FILE="$(basename ${FILE} ".${INPUT_FORMAT}").${OUTPUT_FORMAT}"
+    echo "- ${ROOT}/${FILE} => ${TARGET_DIR}/${TARGET_FILE}"
+
+    TARGET_DIRS=(${TARGET_DIRS[@]} "${TARGET_DIR}")
+    CONVERSIONS=(${CONVERSIONS[@]} "${ROOT}/${FILE} -o ${TARGET_DIR}/${TARGET_FILE}")
+  done
+
+  popd >/dev/null
+done
+
+# Creates target directories
+for TARGET_DIR in ${TARGET_DIRS[@]}; do
+  mkdir -p "${TARGET_DIR}"
+done
+
+# Runs conversions
+for CONVERSION in ${CONVERSIONS[@]}; do
+  bin/pandoc "${CONVERSION}"
+done
