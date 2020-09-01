@@ -1,9 +1,18 @@
-# Explicación 0: Instalación de Ruby
+---
+title: "Explicación 0: Instalación de Ruby"
+author:
+  - Taller de Tecnologías de Producción de Software - Opción Ruby
+date: "2020"
+subject: "Instalación de Ruby"
+lang: "es"
+# Eisvogel options
+listings-disable-line-numbers: true
+...
 
 En esta explicación se trata de explicar en una guía paso a paso cómo preparar un ambiente
 de desarrollo local para Ruby.
 
-## Gestores de ambiente
+# Gestores de ambiente
 
 Los gestores de ambiente, también llamados _manejadores de versiones_, facilitan el uso de
 múltiples versiones de un lenguaje (Ruby, en nuestro caso) en un mismo sistema.
@@ -13,6 +22,7 @@ estará presente en la shell, cambiando la versión de Ruby automáticamente (ac
 reglas bien definidas) o según las indicaciones particulares del usuario.
 
 Los más populares:
+
 * [RVM](https://github.com/rvm/rvm)
   * Ruby enVironment Manager.
   * Herramienta pionera en su función.
@@ -21,9 +31,12 @@ Los más populares:
   * Alternativa más liviana y con menores pre-requisitos que RVM.
   * Extensible mediante plugins.
 
-Nos vamos a centrar en **rbenv**, el gestor que desde la cátedra recomendamos usar.
+# rbenv
 
-### rbenv: instalación
+En esta explicación nos vamos a centrar en **rbenv**, el gestor que desde la cátedra
+recomendamos utilizar.
+
+## Instalación de rbenv
 
 Para instalar este gestor, se debe contar con el comando `git`, las librerías
 necesarias para compilar programas escritos en C y algunas dependencias más. En
@@ -132,7 +145,7 @@ Warning: no Ruby detected on the system
 
 Para poder instalar versiones de Ruby, se debe continuar con el siguiente apartado.
 
-### Instalación de ruby-build
+## Instalación de ruby-build
 
 La herramienta rbenv por si sola nos permite cambiar de versiones de Ruby, pero no instala
 nuevas versiones. Para poder hacer eso, se debe contar con el _plugin_ `ruby-build` para
@@ -194,7 +207,7 @@ la próxima sección.
 > $ git pull origin master
 > ```
 
-### rbenv: uso
+## Uso
 
 El uso de este gestor es, en general, totalmente transparente al usuario y automático.
 La herramienta se encarga de cambiar la versión de Ruby a utilizar acorde a reglas bien
@@ -246,7 +259,7 @@ $ rbenv install VERSION
 Donde `VERSION` es la versión que se desea instalar, y que debe estar disponible entre las
 versiones que aparecen al ejecutar `rbenv install -l`.
 
-## Paso final: Prueba
+# Paso final: prueba
 
 Una vez que se tiene el ambiente de desarrollo en Ruby instalado y configurado, se lo
 puede probar ejecutando un script escrito en Ruby. Para ello, se puede tomar el que
