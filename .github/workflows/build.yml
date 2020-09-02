@@ -1,0 +1,68 @@
+name: Build
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build-pdfs:
+    name: Build PDFs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run bin/build
+        run: bin/build
+
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +%F)"
+
+      - name: Create release
+        uses: actions/create-release@v1
+        id: release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: ${{ github.ref }} (${{ steps.date.outputs.date }})
+          draft: false
+          prerelease: false
+
+      - name: Zip "practicas"
+        run: zip -j practicas.zip pdfs/practicas
+      - name: Publish asset "practicas"
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.release.outputs.upload_url }}
+          asset_path: practicas.zip
+          asset_name: Prácticas
+          asset_content_type: application/zip
+
+      - name: Zip "explicaciones"
+        run: zip -j explicaciones.zip pdfs/explicaciones
+      - name: Publish asset "explicaciones"
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.release.outputs.upload_url }}
+          asset_path: explicaciones.zip
+          asset_name: Explicaciones
+          asset_content_type: application/zip
+
+      - name: Zip "entregas"
+        run: zip -j entregas.zip pdfs/entregas
+      - name: Publish asset "entregas"
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.release.outputs.upload_url }}
+          asset_path: entregas.zip
+          asset_name: Entregas
+          asset_content_type: application/zip
