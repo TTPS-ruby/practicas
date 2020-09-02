@@ -47,7 +47,7 @@ jobs:
         with:
           upload_url: ${{ steps.release.outputs.upload_url }}
           asset_path: practicas.zip
-          asset_name: Prácticas
+          asset_name: practicas.zip
           asset_content_type: application/zip
 
       - name: Zip "explicaciones"
@@ -61,7 +61,7 @@ jobs:
         with:
           upload_url: ${{ steps.release.outputs.upload_url }}
           asset_path: explicaciones.zip
-          asset_name: Explicaciones
+          asset_name: explicaciones.zip
           asset_content_type: application/zip
 
       - name: Zip "entregas"
@@ -75,5 +75,5 @@ jobs:
         with:
           upload_url: ${{ steps.release.outputs.upload_url }}
           asset_path: entregas.zip
-          asset_name: Entregas
+          asset_name: entregas.zip
           asset_content_type: application/zip
