@@ -1,4 +1,4 @@
-name: Build
+name: Build and release
 
 on:
   push:
@@ -6,12 +6,17 @@ on:
       - '*'
 
 jobs:
-  build-pdfs:
-    name: Build PDFs
+  pdfs:
+    name: PDFs
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+
+      - name: Docker login
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: docker login docker.pkg.github.com -u $GITHUB_ACTOR -p $GITHUB_TOKEN
 
       - name: Run bin/build
         run: bin/build
