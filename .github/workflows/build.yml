@@ -37,9 +37,11 @@ jobs:
           prerelease: false
 
       - name: Zip "practicas"
-        run: zip -j practicas.zip pdfs/practicas
+        id: zip-practicas
+        run: zip -j practicas.zip pdfs/practicas/**/*.pdf
       - name: Publish asset "practicas"
         uses: actions/upload-release-asset@v1
+        if: ${{ steps.zip-practicas.outcome == "success" }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -49,9 +51,11 @@ jobs:
           asset_content_type: application/zip
 
       - name: Zip "explicaciones"
-        run: zip -j explicaciones.zip pdfs/explicaciones
+        id: zip-explicaciones
+        run: zip -j explicaciones.zip pdfs/explicaciones/**/*.pdf
       - name: Publish asset "explicaciones"
         uses: actions/upload-release-asset@v1
+        if: ${{ steps.zip-explicaciones.outcome == "success" }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -61,9 +65,11 @@ jobs:
           asset_content_type: application/zip
 
       - name: Zip "entregas"
-        run: zip -j entregas.zip pdfs/entregas
+        id: zip-entregas
+        run: zip -j entregas.zip pdfs/entregas/**/*.pdf
       - name: Publish asset "entregas"
         uses: actions/upload-release-asset@v1
+        if: ${{ steps.zip-entregas.outcome == "success" }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
