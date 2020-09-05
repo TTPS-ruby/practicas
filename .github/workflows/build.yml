@@ -38,7 +38,8 @@ jobs:
 
       - name: Zip "practicas"
         id: zip_practicas
-        run: zip -j practicas.zip pdfs/practicas/**/*.pdf
+        run: zip -j practicas.zip pdfs/practicas/*.pdf
+
       - name: Publish asset "practicas"
         uses: actions/upload-release-asset@v1
         if: steps.zip_practicas.outcome == 'success'
@@ -52,7 +53,8 @@ jobs:
 
       - name: Zip "explicaciones"
         id: zip_explicaciones
-        run: zip -j explicaciones.zip pdfs/explicaciones/**/*.pdf
+        run: zip -j explicaciones.zip pdfs/explicaciones/*.pdf
+
       - name: Publish asset "explicaciones"
         uses: actions/upload-release-asset@v1
         if: steps.zip_explicaciones.outcome == 'success'
@@ -66,7 +68,8 @@ jobs:
 
       - name: Zip "entregas"
         id: zip_entregas
-        run: zip -j entregas.zip pdfs/entregas/**/*.pdf
+        run: zip -j entregas.zip pdfs/entregas/*.pdf
+
       - name: Publish asset "entregas"
         uses: actions/upload-release-asset@v1
         if: steps.zip_entregas.outcome == 'success'
