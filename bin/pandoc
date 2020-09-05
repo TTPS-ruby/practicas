@@ -12,6 +12,6 @@ set -eo pipefail
 
 IMAGE="docker.pkg.github.com/ttps-ruby/pandoc-eisvogel/run"
 CWD="$(pwd)"
-DEFAULT_ARGS="--listings"
+DEFAULT_ARGS="--listings --pdf-engine=xelatex"
 
-docker run --rm --volume "${CWD}:/data" "${IMAGE}" $@ ${DEFAULT_ARGS}
+docker run --rm --volume "${CWD}:/data" "${IMAGE}" ${DEFAULT_ARGS} variables.yml $@

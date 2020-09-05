@@ -41,7 +41,7 @@ for ROOT in ${ROOT_DIRS[@]}; do
   OUTDIR="${OUTPUT_DIR}/${ROOT}"
 
   for FILE in $(find * -name "*.${INPUT_FORMAT}"); do
-    TARGET_DIR="${OUTDIR}/$(dirname ${FILE})"
+    TARGET_DIR="${OUTDIR}/$(dirname $(basename ${FILE}))"
     TARGET_FILE="$(basename ${FILE} ".${INPUT_FORMAT}").${OUTPUT_FORMAT}"
     echo "- ${ROOT}/${FILE} => ${TARGET_DIR}/${TARGET_FILE}"
 

@@ -1,4 +1,8 @@
-# Práctica 0: Git
+---
+title: "Práctica 0: Git"
+subject: "Git SCM"
+titlepage: true
+...
 
 En esta práctica preliminar, repasaremos algunos conceptos y comandos básicos de Git, la
 herramienta de control de versiones que utilizaremos a lo largo de la cursada.
@@ -7,7 +11,7 @@ herramienta de control de versiones que utilizaremos a lo largo de la cursada.
 > práctica, pero no sin antes **leer la siguiente sección** ("Aclaraciones generales") que
 > explica algunas cuestiones comunes a todas las prácticas de la materia.
 
-## Aclaraciones generales
+# Aclaraciones generales
 
 Estas son algunas cuestiones a tener en cuenta a lo largo de las prácticas de la materia:
 
@@ -23,8 +27,8 @@ Estas son algunas cuestiones a tener en cuenta a lo largo de las prácticas de l
    complementarios serán en su gran mayoría basados en ese ambiente.
 4. En los materiales de la cátedra, cuando estemos hablando de ejecutar comandos en una
    terminal vamos a denotar las líneas que tenés que ejecutar con un símbolo de prompt `$`
-   si debés ejecutarlo con tu usuario o `#` si debés hacerlo con un usuario con
-   privilegios de administrador (típicamente referenciado como el usuario `root`).
+   si debés ejecutarlo con tu _user_ o `#` si debés hacerlo con uno con privilegios de
+   administrador (típicamente `root`).
 5. A fin de facilitar la preparación del ambiente, en caso que no cuentes con una
    instalación disponible (física o virtual) de un Sistema Operativo *nix (GNU/Linux o
    macOS, por ejemplo), podés instalar una versión reciente de Ubuntu Linux en una máquina
@@ -34,7 +38,7 @@ Estas son algunas cuestiones a tener en cuenta a lo largo de las prácticas de l
    probar un ambiente on line como [repl.it](https://repl.it/languages/ruby) en el que
    podrás realizar los ejercicios de la materia.
 
-## Requisitos
+# Requisitos
 
 Para realizar esta práctica - y el resto de la materia también -, necesitás tener Git
 instalado en tu ambiente de desarrollo. Para saber si tenés Git instalado, podés ejecutar
@@ -62,20 +66,20 @@ como Ubuntu Linux, podés ejecutar el siguiente comando para instalar Git:
 Luego de eso, deberías poder ejecutar correctamente el comando `git --version` mencionado
 anteriormente.
 
-## Subcomandos Git
+# Subcomandos Git
 
 Git se maneja desde la línea de comandos mediante el uso de _subcomandos_. Cada tarea,
 orden o consulta que quieras hacer con Git la vas a poder realizar con el comando `git` y
 alguno de sus subcomandos, los cuales podés listar al ejecutar (solo) `git` o uno de los
 subcomandos más útiles que tiene Git: `git help`.
 
-### Cómo obtener ayuda
+## Cómo obtener ayuda
 
 Git provee ayuda mediante las páginas del manual (o _man pages_) para cualquier subcomando
 que ofrezca, y para hacer aún más fácil la consulta de esa ayuda provee un subcomando
 especial que abre la página del manual del subcomando que quieras investigar: `git help`.
 
-## Ejercicios
+# Ejercicios
 
 1. Ejecutá `git` o `git help` en la línea de comandos y mirá los subcomandos que tenés
    disponibles.

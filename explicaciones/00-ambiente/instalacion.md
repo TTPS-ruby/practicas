@@ -1,12 +1,7 @@
 ---
 title: "Explicación 0: Instalación de Ruby"
-author:
-  - Taller de Tecnologías de Producción de Software - Opción Ruby
-date: "2020"
 subject: "Instalación de Ruby"
-lang: "es"
-# Eisvogel options
-listings-disable-line-numbers: true
+titlepage: true
 ...
 
 En esta explicación se trata de explicar en una guía paso a paso cómo preparar un ambiente
