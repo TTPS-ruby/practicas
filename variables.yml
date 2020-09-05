@@ -9,7 +9,7 @@ titlepage-color: "e02b11"
 titlepage-rule-color: "f1614c"
 titlepage-rule-height: 8
 titlepage-text-color: "ffffff"
-titlepage-background: "assets/ruby-wireframe.pdf"
+titlepage-background: "assets/ruby.pdf"
 listings-disable-line-numbers: true
 listings-no-page-break: true
 ...
