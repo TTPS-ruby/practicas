@@ -56,7 +56,7 @@ El primer paso es clonar el repositorio de rbenv localmente. Esto se hará en el
 directorio `.rbenv` dentro del directorio personal (`$HOME`) del usuario que se deseee:
 
 ```console
-$ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv
+$ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 ```
 
 Acto seguido, se procederá a situarse en ese directorio y a compilar una extensión que
