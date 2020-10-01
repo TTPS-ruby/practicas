@@ -194,14 +194,14 @@ construcciones que nos ofrece para trabajar con sus tipos básicos y estos tipos
 
     ```ruby
     multiplos_de_3_y_5(100)
-    # => [15, 30, 45, 60, 75, 90]
+    # => 315
     ```
 22. Créa otra función, similar a la anterior, que busque los números naturales múltiplos
     de _N_ números enteros que recibirá como parámetro en un arreglo. Por ejemplo:
 
     ```ruby
     multiplos_de([3, 5], 100)
-    # => [15, 30, 45, 60, 75, 90]
+    # => 100
     multiplos_de([3, 5, 17, 28, 65], 100_000)
-    # => [92820]
+    # => 92820
     ```
