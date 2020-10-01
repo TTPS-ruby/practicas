@@ -196,7 +196,7 @@ construcciones que nos ofrece para trabajar con sus tipos básicos y estos tipos
     multiplos_de_3_y_5(100)
     # => 315
     ```
-22. Créa otra función, similar a la anterior, que busque los números naturales múltiplos
+22. Creá otra función, similar a la anterior, que busque los números naturales múltiplos
     de _N_ números enteros que recibirá como parámetro en un arreglo. Por ejemplo:
 
     ```ruby
