@@ -201,7 +201,7 @@ construcciones que nos ofrece para trabajar con sus tipos básicos y estos tipos
 
     ```ruby
     multiplos_de([3, 5], 100)
-    # => 100
+    # => 315
     multiplos_de([3, 5, 17, 28, 65], 100_000)
     # => 92820
     ```
