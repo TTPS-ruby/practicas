@@ -1,6 +1,6 @@
 ---
-title: "Entrega 3"
-subject: "Entrega práctica 3"
+title: "Trabajo Práctico Integrador: tercera entrega"
+subject: "Tercera entrega del TPI"
 titlepage: true
 ...
 
