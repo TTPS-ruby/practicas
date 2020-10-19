@@ -31,8 +31,15 @@ básico para que la herramienta provea la siguiente funcionalidad:
 * Organizar las notas en cuadernos (ver apartado **Organización en cuadernos**).
 
 En esta primera instancia el desarrollo será utilizable mediante la interfaz de línea de
-comandos (_CLI_), para lo cual te brindamos un _template_ de proyecto para que utilices
-como base de tu desarrollo.
+comandos (_CLI_), para lo cual te brindamos una plantilla (o _template_) de proyecto para
+que utilices como base de tu desarrollo, el cual vas a encontrar en GitHub:
+
+[https://github.com/TTPS-ruby/rn-template](https://github.com/TTPS-ruby/rn-template)
+
+Podés generar tu proyecto a partir de la plantilla con el botón _"Use this template"_ que
+GitHub provee en el repositorio plantilla. Eso va a permitirte clonar la plantilla en un
+nuevo repositorio tuyo, y poder trabajar sobre él a partir del código inicial que la
+cátedra te provee.
 
 ## Persistencia
 
