@@ -119,10 +119,30 @@ Algunas sugerencias al respecto:
 La decisión que tomes y la implementación deberás dejarlos debidamente documentados en tu
 entrega.
 
-# Uso de la herramienta
-
-_TBD_
-
 # Modalidad de la entrega
 
-_TBD_
+El trabajo, como se ha indicado anteriormente, debe desarrollarse de manera individual.
+Los trabajos entregados se compararán para encontrar posibles similitudes en su estructura
+que pudieran provenir de copias entre distintas entregas.
+
+La entrega de esta primera etapa, al igual que las próximas etapas de entrega del Trabajo
+Práctico Integrador, es de caracter obligatorio pero no así su aprobación. La única etapa
+del TPI que debe ser aprobada es la última (la _entrega final_). Es decir que en esta
+etapa podés entregar algo incompleto y con eso será suficiente, pero tené en cuenta que
+todo lo que no implementes en esta etapa vas a tener que implementarlo en las siguientes.
+
+Tu trabajo tiene que estar versionado en un repositorio Git de [GitHub](https://github.com),
+cuya URL nos entregarás mediante una tarea dedicada a esta primera etapa del TPI en el
+curso de la plataforma de Cátedras.
+
+El proyecto debería comenzarse a partir de la plantilla que la cátedra te provee a modo
+de _template repository_ de GitHub (por eso la limitación al hosting para el repositorio
+Git). La plantilla está disponible en [https://github.com/TTPS-ruby/rn-template](https://github.com/TTPS-ruby/rn-template).
+
+La entrega del código se complementará con un coloquio de defensa que se desarrollará según
+las normativas vigentes al momento del mismo, ya sea de manera virtual mediante la
+plataforma _Big Blue Button_ (BBB) o de manera presencial, si se definiese la habilitación
+de las clases presenciales en la Facultad.
+
+La fecha límite de entrega del trabajo será comunicada en el curso de la plataforma de
+Cátedras, y no se admitirán entregas posteriores a esa fecha.
