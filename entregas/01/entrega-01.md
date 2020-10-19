@@ -42,8 +42,8 @@ representará con un archivo, que tendrá las siguientes características:
 * Su nombre será utilizado como título de la nota, deberá ser único dentro del directorio
   que lo contenga, y su terminación o extensión será `.rn`.
 * Su contenido será de texto plano, y se lo utilizará como el contenido de la nota. _En
-  esta primera etapa sólo utilizaremos notas de texto plano (sin formato), pero puede que
-  en el futuro te pidamos que las notas puedan expresarse en Markdown, LaTeX, MediaWiki, o
+  esta primera etapa sólo utilizaremos notas de texto plano sin formato, pero puede que en
+  el futuro te pidamos que las notas puedan expresarse en Markdown, LaTeX, MediaWiki, o
   cualquier otro formato que a partir de texto plano permita generar texto rico._
 
 > **Una observación respecto de los títulos de las notas:**
@@ -65,8 +65,9 @@ directorios dentro del cajón de notas. Al igual que con los archivos que repres
 notas, el nombre del directorio será el nombre del cuaderno, aplicando a esto las mismas
 limitaciones que con los títulos de las notas.
 
-Las notas pueden no estar organizadas dentro de un cuaderno, para lo cual se reserva el
-nombre de cuaderno "Sin organizar", al que denominaremos el _cuaderno global_.
+Las notas pueden no estar organizadas dentro de un cuaderno, para lo cual existe un
+cuaderno especial que contendrá las notas que no estén categorizadas dentro de un cuaderno
+nombrado, al que denominaremos el _cuaderno global_.
 
 Para simplificar la implementación no se permitirá el anidado de cuadernos, es decir que
 un cuadeno no puede contener a otro(s).
@@ -77,9 +78,10 @@ La herramienta debe permitir realizar, al menos, las siguientes operaciones:
 
 * Sobre las notas:
   * Creación de una nota.
-  * Listado de notas, que puede o no filtrarse por cuaderno y/o por título.
+  * Listado de notas, que puede o no filtrarse por cuaderno.
   * Vista de una nota.
-  * Modificación de una nota.
+  * Modificación del título una nota.
+  * Modificación del contenido una nota.
   * Borrado de una nota.
 * Sobre los cuadernos:
   * Listado de los cuadernos de notas.
@@ -92,8 +94,30 @@ La herramienta debe permitir realizar, al menos, las siguientes operaciones:
 > asegures de cumplir con las operaciones solicitadas por la cátedra y luego, si te queda
 > tiempo antes de la fecha de entrega, implementes las operaciones adicionales.
 
-_TODO: definir qué parámetros admite cada operación. Considerar que si no se especifica un
-cuaderno al crear una nota, esta quedará en el cuaderno global._
+Podés consultar las operaciones esperadas y los argumentos que recibe cada una de éstas en
+[la plantilla para la entrega](https://github.com/TTPS-ruby/rn-template).
+
+En general, dejamos a tu criterio cómo implementar la obtención del contenido de las notas.
+El título, libro y otras opciones se pueden proveer de manera sencilla desde la línea de
+comandos por tratarse de valores que no se extienden más allá de una línea de texto, pero
+al intentar expresar el contenido de las notas, que puede fácilmente extenderse más allá
+de una sola linea de texto, se puede hacer complejo intentar hacer que el contenido sea
+un argumento más del comando.
+
+Algunas sugerencias al respecto:
+
+* Podés tomar el contenido de la nota como un argumento más (obligando a que se rodee con
+  comillas).
+* Similarmente al punto anterior, podés permitir que se provea como un [Variadic argument](https://dry-rb.org/gems/dry-cli/0.6/variadic-arguments/)
+  también obligando a que se rodee el contenido con comillas.
+* Podés leer el contenido de la nota desde la entrada estándar. Tené en cuenta que deberías
+  tomar los saltos de línea tal cual se ingresen, y tener algúna cadena (¿`EOF`?) que marque
+  en qué punto tendrías que dejar de leer desde la entrada estándar.
+* Cualquier otra idea que tengas que permita ingresar el contenido de la nota de una manera
+  práctica y cómoda, sin complicar demasiado tu implementación.
+
+La decisión que tomes y la implementación deberás dejarlos debidamente documentados en tu
+entrega.
 
 # Uso de la herramienta
 
