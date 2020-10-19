@@ -79,7 +79,7 @@ nombrado, al que denominaremos el _cuaderno global_.
 Para simplificar la implementación no se permitirá el anidado de cuadernos, es decir que
 un cuadeno no puede contener a otro(s).
 
-## Gestión de notas `[WIP]`
+## Gestión de notas
 
 La herramienta debe permitir realizar, al menos, las siguientes operaciones:
 
