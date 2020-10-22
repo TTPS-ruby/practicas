@@ -41,6 +41,10 @@ GitHub provee en el repositorio plantilla. Eso va a permitirte clonar la plantil
 nuevo repositorio tuyo, y poder trabajar sobre él a partir del código inicial que la
 cátedra te provee.
 
+Se espera que documentes en algún archivo `README` o similar las decisiones de diseño que
+tomaste, una breve descripción del modelo de datos definido y cualquier otro punto que
+consideres importante documentar.
+
 ## Persistencia
 
 Las notas deberán persistirse utilizando archivos de texto plano en el disco. Cada nota se
@@ -136,15 +140,23 @@ La entrega de esta primera etapa, al igual que las próximas etapas de entrega d
 Práctico Integrador, es de caracter obligatorio pero no así su aprobación. La única etapa
 del TPI que debe ser aprobada es la última (la _entrega final_). Es decir que en esta
 etapa podés entregar algo incompleto y con eso será suficiente, pero tené en cuenta que
-todo lo que no implementes en esta etapa vas a tener que implementarlo en las siguientes.
+todo lo que no implementes en esta etapa vas a tener que implementarlo más adelante.
+
+**Quienes no realicen esta entrega no podrán presentarse a ninguna entrega posterior.**
+Podés no aprobarla, pero es obligatorio que presentes una entrega - aún cuando esté
+incompleta - en la que se vea que trabajaste.
 
 Tu trabajo tiene que estar versionado en un repositorio Git de [GitHub](https://github.com),
 cuya URL nos entregarás mediante una tarea dedicada a esta primera etapa del TPI en el
-curso de la plataforma de Cátedras.
+curso de la plataforma de Cátedras. En caso que el repositorio sea privado, vamos a
+necesitar que nos brindes acceso al repositorio para poder descargarlo. Si esta es tu
+situación, por favor consultá antes de la fecha límite de la entrega con el Jefe de Trabajos
+Prácticos de la materia a qué usuarios de GitHub debés brindarles acceso.
 
 El proyecto debería comenzarse a partir de la plantilla que la cátedra te provee a modo
 de _template repository_ de GitHub (por eso la limitación al hosting para el repositorio
-Git). La plantilla está disponible en [https://github.com/TTPS-ruby/rn-template](https://github.com/TTPS-ruby/rn-template).
+Git), que se encuentra disponible en [https://github.com/TTPS-ruby/rn-template](https://github.com/TTPS-ruby/rn-template). Si necesitás ayuda con esto, hay un video publicado en la plataforma de
+Cátedras que muestra cómo trabajar con la plantilla.
 
 La entrega del código se complementará con un coloquio de defensa que se desarrollará según
 las normativas vigentes al momento del mismo, ya sea de manera virtual mediante la
