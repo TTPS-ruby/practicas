@@ -51,21 +51,21 @@ Sobre esa base, deberás:
 * Eliminar el código de las entregas anteriores de tu proyecto que ya no sea necesario.
 * Documentar las decisiones de diseño que tomes.
 
-Al alcance definido hasta este momento, se le agregará la noción de _propiedad_ de las
-notas y los cuadernos, los cuales tendrán una persona dueña, que es quien los haya creado
-en la aplicación, y no podrá ser modificada para ninguna nota o cuaderno. Cada persona
-podrá ver únicamente las notas y los cuadernos que sean de su propiedad, y no podrá acceder
-de ninguna forma a las notas o los cuadernos de otras personas. Esto conllevará la
-necesidad de implementar mecanismos de autenticación y autorización para que las personas
-puedan identificarse con sus credenciales y acceder solamente a aquellos datos que les
-pertenezcan. Las personas no autenticados no podrán acceder a ninguna nota ni crear una,
+Al alcance definido hasta este momento, se le agrega la noción de _propiedad_ de las notas
+y los cuadernos, los cuales tendrán una persona dueña, que es quien los haya creado en la
+aplicación, y no podrá ser modificada para ninguna nota o cuaderno. Cada persona podrá ver
+únicamente las notas y los cuadernos que sean de su propiedad, y no podrá acceder de
+ninguna forma a las notas o los cuadernos de otras personas. Esto conllevará la necesidad
+de implementar mecanismos de autenticación y autorización para que las personas puedan
+identificarse con sus credenciales y acceder solamente a aquellos datos que les
+pertenezcan. Las personas no autenticadas no podrán acceder a ninguna nota ni crear una,
 pero sí podrán registrarse para crear una cuenta y utilizar el servicio.
 
 Adicionalmente, deberás implementar la UI para poder realizar las operaciones que se
-permiten hacer con las notas y los cuadernos. Para eso, tendrás que implementar
+permiten hacer con las notas y los cuadernos. Para eso, tendrás que desarrollar
 controladores con acciones y vistas asociadas para presentar a la persona sus notas y
 cuadernos existentes, la posibilidad de crear nuevos cuadernos, nuevas notas, ver el
-contenido de las mismas y exportarlas en formato de texto rico. Cómo implementes el modelo
+contenido de las mismas y exportarlas en formato de texto rico. Cómo implementes el flujo
 de interacción será tu decisión, pero se deben ofrecer de manera clara y sencilla las
 mismas operaciones que se especificaron en las entregas anteriores.
 
