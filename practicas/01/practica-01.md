@@ -68,7 +68,12 @@ construcciones que nos ofrece para trabajar con sus tipos básicos y estos tipos
    # => "Casi son las 7"
    ```
 
+   **Es importante considerar que cuando la hora es 1, entonces no decimos: _Son
+   las 1 en punto_, sino que decimos _Es la 1 en punto_. Este caso debe
+   contemplarse en cada situación contemplada por el enunciado anterior.**
+
    > Tip: resolver utilizando rangos numéricos
+
 7. Escribí una función llamada `contar` que reciba como parámetro dos `String` y que
    retorne la cantidad de veces que aparece el segundo `String` en el primero, en una
    búsqueda _case-insensitive_ (sin distinguir mayúsculas o minúsculas). Por ejemplo:
