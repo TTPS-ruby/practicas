@@ -161,10 +161,10 @@ $ rbenv install -l
 
 Y si se quiere instalar cualquiera de las versiones que se listan, sólo basta especificar
 la versión y `ruby-build` se encargará de instalarla. Por ejemplo, para instalar la versión
-`2.7.1` se debe ejecutar este comando (que puede tardar):
+`2.7.4` se debe ejecutar este comando (que puede tardar):
 
 ```console
-$ rbenv install 2.7.1
+$ rbenv install 2.7.4
 ```
 
 Si todo salió bien, se puede corroborar que se disponga de la versión deseada con este comando:
@@ -173,7 +173,7 @@ Si todo salió bien, se puede corroborar que se disponga de la versión deseada 
 $ rbenv versions
 ```
 
-La salida del comando debería incluir `2.7.1`. De ser así, la instalación fue exitosa.
+La salida del comando debería incluir `2.7.4`. De ser así, la instalación fue exitosa.
 
 Aún cuando se tenga instalada una versión de Ruby, si se intenta ejecutar su intérprete
 es probable que se obtenga un error como el siguiente:
@@ -183,7 +183,7 @@ $ ruby -v
 rbenv: ruby: command not found
 
 The `ruby' command exists in these Ruby versions:
-  2.7.1
+  2.7.4
 ```
 
 Esto se debe a que aún no se ha especificado qué versión de Ruby utilizar. Esto se hará en
@@ -221,14 +221,14 @@ especifique respetando este orden de prioridad):
 Rbenv provee algunos comandos que permiten generar o modificar la versión de Ruby deseada
 en los distintos contextos:
 
-* La versión `shell` se puede especificar con el comando `rbenv shell 2.7.1`.
-* La versión `local` se puede especificar con el comando `rbenv local 2.7.1`.
-* La versión `global` se puede especificar con el comando `rbenv global 2.7.1`.
+* La versión `shell` se puede especificar con el comando `rbenv shell 2.7.4`.
+* La versión `local` se puede especificar con el comando `rbenv local 2.7.4`.
+* La versión `global` se puede especificar con el comando `rbenv global 2.7.4`.
 
 Con esto en mente, es conveniente definir la versión `global` de Ruby que se desea utilizar:
 
 ```console
-$ rbenv global 2.7.1
+$ rbenv global 2.7.4
 ```
 
 Luego de esto, se puede corroborar que ahora sí se puede utilizar el intérprete de Ruby en
@@ -241,7 +241,7 @@ $ ruby -v
 Ese comando debería tener una salida similar a la siguiente:
 
 ```
-ruby 2.7.1p83 (2020-03-31 revision a0c7c23c9c) [x86_64-linux]
+ruby 2.7.4p191 (2021-07-07 revision a21a3b7d23) [x86_64-linux]
 ```
 
 Con esto se concluye con la instalación del ambiente de Ruby. En cualquier momento, se
