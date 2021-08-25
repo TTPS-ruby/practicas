@@ -58,19 +58,21 @@ construcciones que nos ofrece para trabajar con sus tipos básicos y estos tipos
    Tomá como ejemplos los siguientes casos:
 
    ```ruby
-   tiempo_en_palabras(Time.new(2015, 10, 21, 10, 1))
+   tiempo_en_palabras(Time.new(2021, 10, 21, 10, 1))
    # => "Son las 10 en punto"
-   tiempo_en_palabras(Time.new(2015, 10, 21, 9, 33))
+   tiempo_en_palabras(Time.new(2021, 10, 21, 9, 33))
    # => "Son las 9 y media"
-   tiempo_en_palabras(Time.new(2015, 10, 21, 8, 45))
+   tiempo_en_palabras(Time.new(2021, 10, 21, 8, 45))
    # => "Son las 9 menos cuarto"
-   tiempo_en_palabras(Time.new(2015, 10, 21, 6, 58))
+   tiempo_en_palabras(Time.new(2021, 10, 21, 6, 58))
    # => "Casi son las 7"
+   tiempo_en_palabras(Time.new(2021, 10, 21, 0, 58))
+   # => "Casi es las 1"
    ```
 
-   **Es importante considerar que cuando la hora es 1, entonces no decimos: _Son
-   las 1 en punto_, sino que decimos _Es la 1 en punto_. Este caso debe
-   contemplarse en cada situación contemplada por el enunciado anterior.**
+   **Es importante considerar que cuando la hora es 1, la forma correcta de expresarla no es
+   _"Son las 1 en punto"_, sino _"Es la 1 en punto"_. Esto debe tenerse en cuenta en cada uno
+   de los casos expresados en el enunciado de este ejercicio.**
 
    > Tip: resolver utilizando rangos numéricos
 
