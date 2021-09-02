@@ -92,11 +92,13 @@ construcciones que nos ofrece para trabajar con sus tipos básicos y estos tipos
    # => 4
    ```
 9. Dada una cadena cualquiera, y utilizando los métodos que provee la clase `String`,
-   realizá las siguientes operaciones sobre dicha cadena, documentando cómo lo hiciste:
-   * Imprimilo con sus caracteres en orden inverso.
-   * Eliminá los espacios en blanco que contenga.
-   * Convertí cada uno de sus caracteres por su correspondiente valor ASCII.
-   * Cambiá las vocales por números:
+   realizá las siguientes operaciones sobre dicha cadena, implementando métodos
+   que funcionen de la siguiente forma:
+   * `string_reverso`: retorna el string con los caracteres en orden inverso.
+   * `string_sin_espacio`: elimina los espacios en blanco que contenga.
+   * `string_a_arreglo_ascii`: retorna un arreglo con cada uno de los caracteres
+      convertidos a su correspondiente valor ASCII.
+   * `string_remplaza_vocal`: cambia las vocales por números:
      * `"a"` o `"A"` por `"4"`,
      * `"e"` o `"E"` por `"3"`,
      * `"i"` o `"I"` por `"1"`,
@@ -114,9 +116,10 @@ construcciones que nos ofrece para trabajar con sus tipos básicos y estos tipos
     [`public_send`](https://ruby-doc.org/core-2.7.4/Object.html#method-i-public_send)
     definidos en la clase `Object`? ¿Cuál es la principal diferencia entre esos dos
     métodos?
-12. Escribí una función que dado un arreglo que contenga varios `String` cualesquiera,
-    retorne un nuevo arreglo donde cada elemento es la longitud del `String` que se
-    encuentra en la misma posición del arreglo recibido como parámetro. Por ejemplo:
+12. Escribí una función `longitud` que dado un arreglo que contenga
+    varios `String` cualesquiera, retorne un nuevo arreglo donde cada elemento es
+    la longitud del `String` que se encuentra en la misma posición del arreglo
+    recibido como parámetro. Por ejemplo:
 
     ```ruby
     longitud(['TTPS', 'Opción', 'Ruby', 'Cursada 2019'])
@@ -129,12 +132,13 @@ construcciones que nos ofrece para trabajar con sus tipos básicos y estos tipos
     listar({ perros: 2, gatos: 2, peces: 0, aves: 0 })
     # => "1. perros: 2\n2. gatos: 2\n3. peces: 0\n4. aves: 0"
     ```
-14. Modificá la función anterior para que además reciba opcionalmente un parámetro llamado
-    `pegamento` (su valor por defecto debe ser `": "`) que sea el que utilice para unir
-    los pares de clave/valor. Por ejemplo:
+14. Mejorar la función anterior en una nueva llamada `listar_mejorada` para que
+    además reciba opcionalmente un parámetro llamado `pegamento` (su valor por
+    defecto debe ser `": "`) que sea el que utilice para unir los pares de
+    clave/valor. Por ejemplo:
 
     ```ruby
-    listar({ perros: 2, gatos: 2, peces: 0, aves: 0 }, " -> ")
+    listar_mejorada({ perros: 2, gatos: 2, peces: 0, aves: 0 }, " -> ")
     # => "1. perros -> 2\n2. gatos -> 2\n3. peces -> 0\n4. aves -> 0"
     ```
 15. Escribí una función llamada `rot13` que _encripte_ un `String` recibido como parámetro
@@ -163,8 +167,8 @@ construcciones que nos ofrece para trabajar con sus tipos básicos y estos tipos
     ¡Hola, R2-D2!
     ```
 18. Escribí un nuevo script, que de manera similar al implementado en el punto anterior
-    haga el saludo usando un nombre que se prova, pero que en lugar de solicitar que el
-    nombre se ingrese por entrada estándar, éste se reciba como como argumento del script.
+    haga el saludo usando un nombre que se provea, pero que en lugar de solicitar que el
+    nombre se ingrese por entrada estándar, éste se reciba como argumento del script.
     Por ejemplo:
 
     ```bash
