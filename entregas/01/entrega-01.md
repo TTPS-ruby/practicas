@@ -131,7 +131,7 @@ qué usuarios de GitHub debés brindarles acceso.
 
 El proyecto debería comenzarse a partir de la plantilla que la cátedra te provee a modo de
  _template repository_ de GitHub (por eso la limitación al hosting para el repositorio Git),
- que se encuentra disponible en [https://github.com/TTPS‐ruby/polycon‐template](https://github.com/TTPS‐ruby/polycon‐template).
+ que se encuentra disponible en [https://github.com/TTPS-ruby/polycon-template](https://github.com/TTPS-ruby/polycon-template).
 
 La fecha límite de entrega del trabajo será comunicada en el curso de la plataforma de
 Cátedras, y no se admitirán entregas posteriores a esa fecha.
