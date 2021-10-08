@@ -89,7 +89,7 @@ librerías reutilizables que el lenguaje provee como elementos de primer nivel d
    # Como primer paso se pide al usuario que indique la cantidad de números que ingresará.
    cantidad = 0
    while cantidad < 15
-     puts '¿Cuál es la cantidad de números que ingresará? Debe ser al menos 15'
+     puts 'Cuál es la cantidad de números que ingresará? Debe ser al menos 15'
      cantidad = Integer(gets)
    end
 
@@ -275,15 +275,15 @@ librerías reutilizables que el lenguaje provee como elementos de primer nivel d
 
 18. Desarrollá una gema que empaquete toda la funcionalidad implementada en el módulo
     `Countable` que desarrollaste en la práctica anterior. Llamala con algún nombre
-    distintivo y único. Por ejemplo, podrías llamarla `ruby_2020`.
+    distintivo y único. Por ejemplo, podrías llamarla `ruby_2021`.
 
     La forma de usarla sería algo similar a esto:
 
     ```ruby
-    require 'ruby_2020'
+    require 'ruby_2021'
 
     class MiClase
-      include Ruby2020::Countable
+      include Ruby2021::Countable
 
       def hola
         puts "Hola"
