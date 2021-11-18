@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @person.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @person.last_name %>
+</p>
+
+<p>
+  <strong>Confirmed:</strong>
+  <%= @person.confirmed %>
+</p>
+
+<%= link_to 'Edit', edit_event_person_path(@event, @person) %> |
+<%= link_to 'Back', event_people_path(@event) %>
