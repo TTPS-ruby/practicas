@@ -17,6 +17,13 @@
         Hola <%= current_user.email %>
         <%= link_to 'Cerrar sesión', destroy_user_session_path, method: :delete %>
       </p>
+      <p>
+        <%= link_to 'Eventos', events_path %>
+        <% if can? :read, EventType %>
+          |
+          <%= link_to 'Tipos de eventos', event_types_path %>
+        <% end %>
+      </p>
     <% end %>
 
     <p class="notice"><%= notice %></p>

@@ -1,5 +1,5 @@
 class EventTypesController < ApplicationController
-  before_action :set_event_type, only: [:show, :edit, :update, :destroy]
+  load_and_authorize_resource
 
   # GET /event_types
   def index
@@ -46,11 +46,6 @@ class EventTypesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_event_type
-      @event_type = EventType.find(params[:id])
-    end
-
     # Only allow a list of trusted parameters through.
     def event_type_params
       params.require(:event_type).permit(:name)

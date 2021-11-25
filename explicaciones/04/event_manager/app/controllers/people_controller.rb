@@ -1,6 +1,6 @@
 class PeopleController < ApplicationController
-  before_action :set_event
-  before_action :set_person, only: %i[show edit update destroy]
+  load_and_authorize_resource :event
+  load_and_authorize_resource :person, through: :event
 
   # GET /people
   def index
@@ -12,7 +12,6 @@ class PeopleController < ApplicationController
 
   # GET /people/new
   def new
-    @person = @event.people.new
   end
 
   # GET /people/1/edit
@@ -45,15 +44,6 @@ class PeopleController < ApplicationController
   end
 
   private
-
-  def set_event
-    @event = Event.find(params[:event_id])
-  end
-
-  # Use callbacks to share common setup or constraints between actions.
-  def set_person
-    @person = @event.people.find(params[:id])
-  end
 
   # Only allow a list of trusted parameters through.
   def person_params
