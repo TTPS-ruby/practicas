@@ -3,7 +3,7 @@ class EventsController < ApplicationController
 
   # GET /events
   def index
-    @events = Event.all
+    @events = Event.eager_load(:event_type).joins(:event_type).order(:date)
   end
 
   # GET /events/1

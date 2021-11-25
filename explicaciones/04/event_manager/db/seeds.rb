@@ -24,3 +24,5 @@ rand(10..50).times do
     event.people.create(first_name: "First name #{i}", last_name: "Last name #{i}", confirmed: coin_toss)
   end
 end
+
+User.create(email: 'admin@eventmanager.com', password: '123456')
