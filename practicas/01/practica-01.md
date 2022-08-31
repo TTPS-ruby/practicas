@@ -13,7 +13,7 @@ construcciones que nos ofrece para trabajar con sus tipos básicos y estos tipos
 > de Ruby y cuando termines de configurar el ambiente, vuelvas a esta práctica para hacer
 > los ejercicios.
 > Si bien en general es indistinto de qué forma tengas instalado Ruby y qué versión del
-> lenguaje utilices, es importante que utilices una versión relativamente reciente (`2.5`
+> lenguaje utilices, es importante que utilices una versión relativamente reciente (`2.6`
 > o posterior).
 
 # Ejercicios
@@ -58,15 +58,15 @@ construcciones que nos ofrece para trabajar con sus tipos básicos y estos tipos
    Tomá como ejemplos los siguientes casos:
 
    ```ruby
-   tiempo_en_palabras(Time.new(2021, 10, 21, 10, 1))
+   tiempo_en_palabras(Time.new(2022, 10, 21, 10, 1))
    # => "Son las 10 en punto"
-   tiempo_en_palabras(Time.new(2021, 10, 21, 9, 33))
+   tiempo_en_palabras(Time.new(2022, 10, 21, 9, 33))
    # => "Son las 9 y media"
-   tiempo_en_palabras(Time.new(2021, 10, 21, 8, 45))
+   tiempo_en_palabras(Time.new(2022, 10, 21, 8, 45))
    # => "Son las 9 menos cuarto"
-   tiempo_en_palabras(Time.new(2021, 10, 21, 6, 58))
+   tiempo_en_palabras(Time.new(2022, 10, 21, 6, 58))
    # => "Casi son las 7"
-   tiempo_en_palabras(Time.new(2021, 10, 21, 0, 58))
+   tiempo_en_palabras(Time.new(2022, 10, 21, 0, 58))
    # => "Casi es las 1"
    ```
 
@@ -112,8 +112,8 @@ construcciones que nos ofrece para trabajar con sus tipos básicos y estos tipos
     end
     ```
 11. Tomando el ejercicio anterior como referencia, ¿en qué situaciones usarías los métodos
-    [`send`](https://ruby-doc.org/core-2.7.4/Object.html#method-i-send) y
-    [`public_send`](https://ruby-doc.org/core-2.7.4/Object.html#method-i-public_send)
+    [`send`](https://ruby-doc.org/core-2.7.6/Object.html#method-i-send) y
+    [`public_send`](https://ruby-doc.org/core-2.7.6/Object.html#method-i-public_send)
     definidos en la clase `Object`? ¿Cuál es la principal diferencia entre esos dos
     métodos?
 12. Escribí una función `longitud` que dado un arreglo que contenga
@@ -122,7 +122,7 @@ construcciones que nos ofrece para trabajar con sus tipos básicos y estos tipos
     recibido como parámetro. Por ejemplo:
 
     ```ruby
-    longitud(['TTPS', 'Opción', 'Ruby', 'Cursada 2019'])
+    longitud(['TTPS', 'Opción', 'Ruby', 'Cursada 2022'])
     # => [4, 6, 4, 12]
     ```
 13. Escribí una función llamada `listar` que reciba un `Hash` y retorne un `String` con
@@ -153,8 +153,8 @@ construcciones que nos ofrece para trabajar con sus tipos básicos y estos tipos
     de las letras del `String` y retorne el resultado. Por ejemplo:
 
     ```ruby
-    rot("¡Bienvenidos a la cursada 2019 de TTPS Opción Ruby!", 13)
-    # => "¡Ovrairavqbf n yn phefnqn 2019 qr GGCF Bcpvóa Ehol!"
+    rot("¡Bienvenidos a la cursada 2022 de TTPS Opción Ruby!", 13)
+    # => "¡Ovrairavqbf n yn phefnqn 2022 qr GGCF Bcpvóa Ehol!"
     ```
 17. Escribí un script en Ruby que le pida a quien lo ejecute su nombre, el cual ingresará
     por entrada estándar (el teclado), y que lo utilice para saludarl@ imprimiendo en

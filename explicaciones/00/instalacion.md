@@ -35,7 +35,7 @@ recomendamos utilizar.
 
 Para instalar este gestor, se debe contar con el comando `git`, las librerías
 necesarias para compilar programas escritos en C y algunas dependencias más. En
-la versión actual de Ubuntu (20.04 al momento de escribir esta guía), por ejemplo,
+la versión actual de Ubuntu (22.04 al momento de escribir esta guía), por ejemplo,
 los paquetes necesarios pueden instalarse con los siguientes comandos:
 
 ```console
@@ -161,10 +161,10 @@ $ rbenv install -l
 
 Y si se quiere instalar cualquiera de las versiones que se listan, sólo basta especificar
 la versión y `ruby-build` se encargará de instalarla. Por ejemplo, para instalar la versión
-`2.7.4` se debe ejecutar este comando (que puede tardar):
+`2.7.6` se debe ejecutar este comando (que puede tardar):
 
 ```console
-$ rbenv install 2.7.4
+$ rbenv install 2.7.6
 ```
 
 Si todo salió bien, se puede corroborar que se disponga de la versión deseada con este comando:
@@ -173,7 +173,7 @@ Si todo salió bien, se puede corroborar que se disponga de la versión deseada 
 $ rbenv versions
 ```
 
-La salida del comando debería incluir `2.7.4`. De ser así, la instalación fue exitosa.
+La salida del comando debería incluir `2.7.6`. De ser así, la instalación fue exitosa.
 
 Aún cuando se tenga instalada una versión de Ruby, si se intenta ejecutar su intérprete
 es probable que se obtenga un error como el siguiente:
@@ -183,7 +183,7 @@ $ ruby -v
 rbenv: ruby: command not found
 
 The `ruby' command exists in these Ruby versions:
-  2.7.4
+  2.7.6
 ```
 
 Esto se debe a que aún no se ha especificado qué versión de Ruby utilizar. Esto se hará en
@@ -221,14 +221,14 @@ especifique respetando este orden de prioridad):
 Rbenv provee algunos comandos que permiten generar o modificar la versión de Ruby deseada
 en los distintos contextos:
 
-* La versión `shell` se puede especificar con el comando `rbenv shell 2.7.4`.
-* La versión `local` se puede especificar con el comando `rbenv local 2.7.4`.
-* La versión `global` se puede especificar con el comando `rbenv global 2.7.4`.
+* La versión `shell` se puede especificar con el comando `rbenv shell 2.7.6`.
+* La versión `local` se puede especificar con el comando `rbenv local 2.7.6`.
+* La versión `global` se puede especificar con el comando `rbenv global 2.7.6`.
 
 Con esto en mente, es conveniente definir la versión `global` de Ruby que se desea utilizar:
 
 ```console
-$ rbenv global 2.7.4
+$ rbenv global 2.7.6
 ```
 
 Luego de esto, se puede corroborar que ahora sí se puede utilizar el intérprete de Ruby en
@@ -238,10 +238,10 @@ la versión deseada:
 $ ruby -v
 ```
 
-Ese comando debería tener una salida similar a la siguiente:
+Ese comando debería tener una salida que incluya:
 
 ```
-ruby 2.7.4p191 (2021-07-07 revision a21a3b7d23) [x86_64-linux]
+ruby 2.7.6
 ```
 
 Con esto se concluye con la instalación del ambiente de Ruby. En cualquier momento, se
