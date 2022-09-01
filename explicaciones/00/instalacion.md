@@ -56,7 +56,7 @@ El primer paso es clonar el repositorio de rbenv localmente. Esto se hará en el
 directorio `.rbenv` dentro del directorio personal (`$HOME`) del usuario que se deseee:
 
 ```console
-$ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+$ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 ```
 
 Acto seguido, se procederá a situarse en ese directorio y a compilar una extensión que
@@ -149,7 +149,7 @@ rbenv.
 Su instalación es muy sencilla:
 
 ```console
-$ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+$ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 ```
 
 A partir de esto se pueden ver las versiones de Ruby disponibles para instalar ejecutando
