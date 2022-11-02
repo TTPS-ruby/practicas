@@ -33,7 +33,7 @@ El desarrollo debe realizarse utilizando el siguiente stack tecnológico:
 Te han solicitado que el sistema de gestión de turnos provea el siguiente conjunto de
 funcionalidades:
 
-* Gestionar de las sucursales del banco (ver apartado **Gestión de sucursales**).
+* Gestionar las sucursales del banco (ver apartado **Gestión de sucursales**).
 * Gestionar los horarios de atención de las sucursales (ver apartado **Gestión de horarios**).
 * Gestionar los usuarios (ver apartado **Gestión de usuarios**).
 * Gestionar los turnos (ver apartado **Gestión de turnos**).
@@ -72,7 +72,7 @@ una contraseña y un rol. Los roles posibles son:
 * `Administrador`.
 * `Personal bancario`, que además de los atributos antes mencionados deberá tener una
   sucursal asignada (dato obligatorio solo para usuarios de este rol).
-* `Cliente`, que además de los atributos antes mencionados deberá tener.
+* `Cliente`.
 
 A continuación se detalla qué operaciones puede realizar cada rol:
 
