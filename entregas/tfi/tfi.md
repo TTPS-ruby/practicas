@@ -11,12 +11,12 @@ expuestas en este documento.
 
 # Contexto
 
-Un importante banco de la Argentina está buscando modernizar la forma en que gestionan los
-turnos para atención presencial en sus sucursales, y para eso te encomendaron un desarrollo.
+Un importante banco de la Argentina está buscando modernizar la forma en que gestiona los
+turnos para atención presencial en sus sucursales y para eso te encomendaron un desarrollo.
 En la actualidad, cualquier cliente debe acercarse a la sucursal para solicitar un turno
-para atención, y luego esperar a que se le llame. El banco quiere poder ofrecer un sistema
+para atención y luego esperar a que se le llame. El banco quiere poder ofrecer un sistema
 de turnos online, para que cualquier persona pueda solicitar un turno para ser atendido en
-una sucursal.
+una sucursal sin necesidad de acercarse a ésta y tener que esperar a ser atendida.
 
 # Requisitos técnicos
 
@@ -30,18 +30,17 @@ El desarrollo debe realizarse utilizando el siguiente stack tecnológico:
 
 # Alcance
 
-Te han solicitado que el sistema de gestión de turnos provea el siguiente conjunto de
-funcionalidades:
+Te han solicitado que el sistema de gestión de turnos brinde la posilibidad de gestionar:
 
-* Gestionar las sucursales del banco (ver apartado **Gestión de sucursales**).
-* Gestionar los horarios de atención de las sucursales (ver apartado **Gestión de horarios**).
-* Gestionar los usuarios (ver apartado **Gestión de usuarios**).
-* Gestionar los turnos (ver apartado **Gestión de turnos**).
+* Las sucursales del banco (ver apartado **Gestión de sucursales**).
+* Los horarios de atención de las sucursales (ver apartado **Gestión de horarios**).
+* Los usuarios (ver apartado **Gestión de usuarios**).
+* Los turnos (ver apartado **Gestión de turnos**).
 
 ## Gestión de sucursales
 
 Las sucursales bancarias deberán tener, como mínimo, los siguientes atributos (todos requeridos):
-nombre (único), dirección y teléfono.
+nombre (debe ser único), dirección y teléfono.
 
 El sistema debe permitir gestionar las sucursales del banco. Para esto, se debe brindar una
 interfaz de administración que permita:
@@ -157,3 +156,20 @@ saber a qué usuarios de GitHub deberás brindarles acceso a tu repositorio.
 
 Las fechas límite de entrega del trabajo serán comunicadas en el curso de la plataforma de
 Cátedras, y no se admitirán entregas posteriores a las mismas.
+
+# Ítems adicionales para quienes no hayan aprobado el parcial
+
+Sólo si no aprobaste el parcial, deberás agregar lo siguiente a tu implementación:
+
+Las sucursales deberán estar ubicadas en una localidad (asociación requerida), y deberás
+implementar un módulo de gestión de localidades que permita:
+
+* Dar de alta una localidad mediante su nombre (valor requerido) y su provincia (valor
+  requerido). No se debe poder repetir la combinación de nombre y provincia (es decir, dentro
+  de una misma provincia no pueden haber dos localidades con el mismo nombre).
+* Modificar una localidad existente.
+* Visualizar una localidad existente.
+* Eliminar una localidad sólo si no tiene sucursales asociadas.
+
+Nota: La provincia puede ser un campo de texto dentro de la localidad, o bien una entidad
+separada con su propio módulo de gestión. Esa decisión queda a tu criterio.
