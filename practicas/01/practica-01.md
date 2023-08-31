@@ -112,8 +112,8 @@ construcciones que nos ofrece para trabajar con sus tipos básicos y estos tipos
     end
     ```
 11. Tomando el ejercicio anterior como referencia, ¿en qué situaciones usarías los métodos
-    [`send`](https://ruby-doc.org/core-2.7.6/Object.html#method-i-send) y
-    [`public_send`](https://ruby-doc.org/core-2.7.6/Object.html#method-i-public_send)
+    [`send`](https://ruby-doc.org/2.7.8/Object.html#method-i-send) y
+    [`public_send`](https://ruby-doc.org/2.7.8/Object.html#method-i-public_send)
     definidos en la clase `Object`? ¿Cuál es la principal diferencia entre esos dos
     métodos?
 12. Escribí una función `longitud` que dado un arreglo que contenga
