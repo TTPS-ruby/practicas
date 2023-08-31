@@ -275,15 +275,15 @@ librerías reutilizables que el lenguaje provee como elementos de primer nivel d
 
 18. Desarrollá una gema que empaquete toda la funcionalidad implementada en el módulo
     `Countable` que desarrollaste en la práctica anterior. Llamala con algún nombre
-    distintivo y único. Por ejemplo, podrías llamarla `ruby_2022`.
+    distintivo y único. Por ejemplo, podrías llamarla `ruby_2023`.
 
     La forma de usarla sería algo similar a esto:
 
     ```ruby
-    require 'ruby_2022'
+    require 'ruby_2023'
 
     class MiClase
-      include Ruby2022::Countable
+      include Ruby2023::Countable
 
       def hola
         puts "Hola"
