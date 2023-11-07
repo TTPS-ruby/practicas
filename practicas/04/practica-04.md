@@ -30,6 +30,8 @@ excelente herramienta para el desarrollo ágil de aplicaciones y servicios web.
 2. Investigá cómo se crea una aplicación Rails nueva y enumerá los pasos básicos para tener
    la aplicación funcionando con una base de datos SQLite.
 
+   > Tip: investigá las opciones disponibles del comando `rails new`.
+
 3. Siguiendo los pasos que enumeraste en el punto anterior, creá una nueva aplicación Rails
    llamada `practica_rails` en la cual vas a realizar las pruebas para los ejercicios de
    esta práctica.
@@ -97,13 +99,15 @@ excelente herramienta para el desarrollo ágil de aplicaciones y servicios web.
     11. `underscore`
     12. `classify`
     13. `constantize`
-    14. `humanize`
-    15. `sum`
+    14. `safe_constantize`
+    15. `humanize`
+    16. `sum`
+    17. `with_indifferent_access`
 
 12. ¿De qué manera se le puede _enseñar_ a AS cómo pasar de singular a plural (o viceversa)
     los sustantivos que usamos en nuestro código?
 
-    > Tip: Mirá el archivo `config/initializers/inflections.rb`
+    > Tip: Mirá el archivo `config/initializers/inflections.rb`.
 
 13. Modificá la configuración de la aplicación Rails para que aprenda a pluralizar correctamente
     en español todas las palabras que terminen en `l`, `n` y `r`.
@@ -188,7 +192,8 @@ excelente herramienta para el desarrollo ágil de aplicaciones y servicios web.
 
 ## ActiveModel (AM)
 
-24. ¿Qué son los validadores de AM?
+24. ¿Qué son los validadores de AM? ¿Cuáles son los validadores básicos que provee esta
+    librería?
 
 25. Agregá a los modelos `Office` y `Employee` las validaciones necesarias para hacer que
     sus atributos cumplan las restricciones definidas para las columnas de la tabla que
