@@ -84,6 +84,9 @@ cual deberá ser diseñado apuntando a ser lo más corto posible. De aquí en m�
 si un link tiene el _slug_ `dAFn2aB` y el patrón de URL a utilizar es `/l/:slug`,
 la _URL única_ de ese link será `https://chq.to/l/dAFn2aB`.
 
+Además de esta información, cada link deberá tener como mínimo un nombre opcional, y las
+validaciones pertinentes de cada campo.
+
 > _Nota: los links cortos pueden ser gestionados únicamente por el usuario que los creó (su
   dueño)._
 
@@ -135,6 +138,12 @@ reportes:
   fechas.
 * Cantidad de accesos por día: muestra la cantidad de accesos por cada día que tuvo el
   link.
+
+En caso de así desearlo, podrás extender este listado de reportes con otros que consideres
+pertinentes y para los cuales podrías también almacenar más información sobre cada acceso.
+Por ejemplo, algunas posibilidades: cantidad de accesos por dispositivo o User Agent,
+cantidad de accesos únicos (es decir, contando una única vez por sesión del navegador los
+accesos), etc.
 
 ## Consideraciones generales
 
