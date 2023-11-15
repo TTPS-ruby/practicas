@@ -30,6 +30,10 @@ El desarrollo debe realizarse utilizando el siguiente stack tecnológico:
   este documento).
 * Una base de datos SQLite para dar soporte de persistencia.
 
+Adicionalmente, se te pide que no reinventes la rueda y cuando sea posible utilices gemas
+bien establecidas que provean funcionalidad habitual en una aplicación web, como puede ser
+el caso de la autenticación.
+
 # Alcance
 
 Deberás desarrollar una aplicación web para crear y gestionar links cortos llamada `chq.to`
