@@ -35,6 +35,12 @@ excelente herramienta para el desarrollo ágil de aplicaciones y servicios web.
 3. Siguiendo los pasos que enumeraste en el punto anterior, creá una nueva aplicación Rails
    llamada `practica_rails` en la cual vas a realizar las pruebas para los ejercicios de
    esta práctica.
+   1. ¿Qué estructura de directorios y archivos se generó?
+   2. Investigá (abrí y leé) los archivos de configuración que se generaron. ¿Qué
+      información importante contienen?
+   3. ¿Qué scripts encontrás en el directorio `bin`? ¿Para qué sirven?
+   4. ¿Qué gemas se incluyeron por defecto en el archivo `Gemfile`? Investigá para qué
+      sirve cada una de ellas.
 
 4. ¿Qué es un ambiente (`environment`) en una aplicación Rails? ¿Qué sentido considerás
    que tiene usar diferentes ambientes en tu aplicación? ¿Cuál es el ambiente por defecto?
